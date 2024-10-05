@@ -9,7 +9,7 @@ html, body, form {
     width: 100%;
     box-sizing: border-box;
     font-family: "Afacad Flux", sans-serif;
-    background-image: url('../Images/background-Default.jpg');
+    background-image: url('../../Images/background-Default.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -47,35 +47,65 @@ html, body, form {
 
 /*Content*/
 
-.user-data .form-control {
-    border-radius: 40px;
-    background: none;
-    background-color: transparent;
-    border: 1.5px solid #2983ff;
-    color: white;
-    letter-spacing: 0.5px;
-    padding: 0.5em 0 0 1.2em;
-    font-weight: 500;
+.user-data {
+    margin: 0.5em 0 !important;
 }
 
-.user-data .form-label {
-    margin-left: 0.5em;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-}
-
-    .user-data .form-label::after{
-        background:transparent !important;
+    .user-data .form-control {
+        border-radius: 40px;
+        background: none;
+        background-color: transparent;
+        border: 1.5px solid #2983ff;
+        color: white;
+        letter-spacing: 0.5px;
+        padding: 0.5em 1.2em 0;
+        font-weight: 500;
     }
+
+    .user-data .form-label {
+        margin-left: 0.5em;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+    }
+
+        .user-data .form-label::after {
+            background: transparent !important;
+        }
 
     .user-data .login-text,
     .user-data .login-icon {
         color: white;
     }
 
-.login-text {
-    margin-left: 0.25em;
-}
+    .user-data .validation-data {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 1em;
+    }
+
+    .user-data .valid-feedback,
+    .user-data .invalid-feedback {
+        display: flex;
+        flex-direction: column;
+        font-size: 1em;
+        font-weight: 700;
+        text-align: end;
+        padding-right: 1em;
+        letter-spacing: 0.5px;
+    }
+
+    .user-data .login-text {
+        margin-left: 0.25em;
+    }
+
+    .user-data .form-control.is-invalid {
+        border-color: red;
+    }
+
+    .user-data .form-control.is-valid {
+        border-color: green;
+    }
 
 #btn_login {
     padding: 0.5em 0 !important;

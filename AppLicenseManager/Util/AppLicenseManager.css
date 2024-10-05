@@ -1,2 +1,77 @@
-﻿body {
+﻿/*Page Settings Default*/
+
+html, body, form {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "Afacad Flux", sans-serif;
 }
+
+/*Page Content*/
+
+#page-content {
+    display: inherit;
+    min-height: inherit;
+    width: inherit;
+    padding: inherit;
+}
+
+/*Side Panel*/
+
+#sidePanel {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 15%;
+    border-right: 1px solid black;
+}
+
+/*Main*/
+
+#main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+    /*Main Header*/
+    #main #main-header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: sticky;
+        top: 0;
+        right: 0;
+    }
+
+        #main #main-header #lblUserSession {
+            margin-left: auto;
+            padding: 0 1em;
+        }
+
+    /*Main Content*/
+    #main #main-content {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    /*Main Footer*/
+    #main #main-footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1em;
+        width: 100%;
+        position: relative;
+        bottom: 0;
+        right: 0;
+    }
+
+        #main #main-footer p {
+            margin: 0;
+        }

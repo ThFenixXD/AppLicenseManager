@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
+using AppLicenseManager.Util;
 
 namespace AppLicenseManager.Util
 {
     public class PageBase : Page
     {
+        protected AppLicenseManager_Entities _ctx;
+
         #region OnPreInit
 
         //protected override void OnPreInit(EventArgs e)
