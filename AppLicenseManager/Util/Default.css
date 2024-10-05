@@ -1,2 +1,99 @@
-﻿body {
+﻿/*Page Settings Default*/
+
+html, body, form {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "Afacad Flux", sans-serif;
+    background-image: url('../Images/background-Default.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+/*Panel Login*/
+
+#pnlLogin {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 30%;
+    padding: 2em;
+    border: 2px solid #2983ff;
+    border-radius: 40px;
+    box-shadow: -4px 4px 4px #2983ff;
+    margin: auto;
+    color: white;
+}
+
+/* Header*/
+
+#login-header {
+    background-color: #2983ff28;
+    border: 3px solid #2983ffff !important;
+    text-align: center;
+    border: 0.1px solid;
+    border-radius: 25px;
+    letter-spacing: 0.5px;
+}
+
+    #login-header h1 {
+        padding-top: 0.25em;
+    }
+
+/*Content*/
+
+.user-data .form-control {
+    border-radius: 40px;
+    background: none;
+    background-color: transparent;
+    border: 1.5px solid #2983ff;
+    color: white;
+    letter-spacing: 0.5px;
+    padding: 0.5em 0 0 1.2em;
+    font-weight: 500;
+}
+
+.user-data .form-label {
+    margin-left: 0.5em;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+    .user-data .form-label::after{
+        background:transparent !important;
+    }
+
+    .user-data .login-text,
+    .user-data .login-icon {
+        color: white;
+    }
+
+.login-text {
+    margin-left: 0.25em;
+}
+
+#btn_login {
+    padding: 0.5em 0 !important;
+    width: 100%;
+    font-weight: 700;
+    font-size: 1.4em;
+    letter-spacing: 0.5px;
+    color: white;
+    background-color: transparent;
+    background: linear-gradient(to-bottom, #2983ff, #ff0000);
+    border: 1.5px solid #2983ff;
+    border-radius: 30px;
+    padding: 0.5em 0;
+    transition: .20s ease;
+}
+
+    #btn_login:hover {
+        background-color: #2983ffca;
+        border-color: white;
+        color: white;
+    }
